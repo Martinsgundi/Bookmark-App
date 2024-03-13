@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.h2 {
+  @apply mb-3 text-2xl font-medium md:mb-6 md:text-[1.62rem] lg:text-[2rem];
+}
+
+.p {
+  @apply mx-auto mb-11 text-grayishBlue 
+  max-w-[38ch] md:max-w-[47ch] lg:text-lg;
+}
+
+.blue-btn {
+  @apply transition-bg font-medium border-softBlue 
+  text-white bg-softBlue midLg:hover:text-softBlue
+  py-3 border-2 rounded-md shadow-md text-[.9rem]
+  midLg:hover:bg-transparent  
+}
+
+.transition-text {
+  @apply transition duration-300 ease-out;
+}
+
+.transition-All {
+  @apply transition-all duration-300 ease-linear;
+}
+
+.padding-inline {
+  @apply px-[8vw] midLg:px-[11vw] xl:px-[13vw];
+}
+
+.transition-bg {
+  @apply transition duration-300 ease-in;
+}
+
+.softRed-hover {
+  @apply transition-text hover:text-softRed;
+}
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
+}
+
+.hamburger.active .bar {
+  background-color: #fff;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.tab-focus {
+  @apply relative text-veryDarkBlue before:absolute before:content-['']
+  before:h-1 before:bg-softRed before:bottom-0 before:w-1/2 before:left-1/2
+  before:translate-x-[-50%] md:before:w-full md:before:left-0 md:before:translate-x-0
+}
+
+.dotted {
+  background-image: url(assets/images/bg-dots.svg);
+  height: 4px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.error {
+  @apply w-full before:absolute before:h-6 before:rounded-b-md
+  before:bg-softRed before:text-[0.7rem] before:text-gray-200 before:items-center
+  before:bottom-[-1.5rem] before:w-full before:font-medium before:flex before:pl-3
+  before:left-0 before:content-["Whoops,_make_sure_it's_an_email"] 
+}
