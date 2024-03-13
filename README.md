@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Check out my solution on Front end mentor](https://your-solution-url.com)
+- Solution URL: [Check out my solution on Front end mentor](https://www.frontendmentor.io/solutions/bookmark-homepage-Bam50CXncO)
 - Live Site URL: [Check out the live site](https://gundi-bookmark.netlify.app/)
 
 ## My process
