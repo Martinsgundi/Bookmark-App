@@ -28,7 +28,7 @@ const Faq = () => {
                             <div key={index} 
                                 className='border-b border-gray-300'>
                                 
-                                <div 
+                                <dt 
                                     aria-label='Toggle FAQ response'
                                             
                                     onClick={() => {
@@ -37,7 +37,7 @@ const Faq = () => {
                                     
                                     className={`${index === 0 ? 'lg:border-t lg:pt-4' : ''} flex justify-between pb-4 cursor-pointer transition-text lg:hover:text-softRed`}>
                                     
-                                    <dt> {faq.question} </dt>
+                                    <h3> {faq.question} </h3>
       
                                     <button
                                         aria-label='Toggle FAQ response'>
@@ -53,11 +53,10 @@ const Faq = () => {
                                                 "hsl(0, 94%, 66%)" : "#5267DF" } 
                                                 stroke-width="3" d="M1 1l8 8 8-8"
                                             />
-                                        </svg> 
-                                        
+                                        </svg>    
                                     </button>
                                     
-                                </div>
+                                </dt>
                             
                                 
                                 <dd aria-hidden={openFaq === index ? 'false' : 'true'}

@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (  
         <>
-            <nav>
+            <nav aria-label='header-navigation'>
                 <div className='text-lg'>
                     <div className= {`${!hamburgerIcon ? 'bg-[#aae4]' : ''}
                         fixed top-0 left-0 z-20 flex items-center 
@@ -26,11 +26,11 @@ const Navbar = () => {
                         {/* Brand Logo */}
                         <div> 
                             {!hamburgerIcon ? 
-                                <a href="/"> 
+                                <a href="/" aria-label='Go to Homepage'> 
                                     <img src= {logoImage} alt="BOOKMARK" /> 
                                 </a> 
                                 : 
-                                <a href="/">
+                                <a href="/" aria-label='Go to Homepage'>
                                     <img src= {logoImage2} alt="BOOKMARK" /> 
                                 </a>
                             }  
@@ -84,11 +84,11 @@ const Navbar = () => {
 
                         {/* Social Icons */}
                         <div className='relative flex justify-center gap-10 top-40'>
-                            <a href="">
+                            <a href="#" aria-label='Visit our Facebook page'>
                                 <img src= {facebookIcon} alt="facbook-icon" />                               
                             </a>
 
-                            <a href="">
+                            <a href="#" aria-label='Visit our Twitter(X) page'>
                                 <img src= {twitterIcon} alt="twitter-icon" />                               
                             </a>
                         </div>
